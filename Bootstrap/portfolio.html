@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body{
+            font-family: 'eurostile', sans-serif;
+            font-size: large;
+        }
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            color: #6e07f3;
+        }
+        a:hover{
+            color: rgb(87, 86, 86);
+        }
+        nav{
+            background-color: rgb(194, 237, 228);
+        }
+        .container-fluid{
+            padding: 0;
+        }
+        .about-bg{
+            background-color:rgb(194, 237, 228);
+            height: 550px;
+        }
+        .para{
+            padding: 0 250px 70px;
+
+        }
+        .col{
+            padding: 0 50px;
+        }
+        .progress{
+            height: 40px;
+            border: 2px solid #6e07f3;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: 700;
+        }
+        .borderstyle{
+            border-radius: 10px;
+            border: 2px solid rgb(194, 237, 228);
+            margin-top: -220px;
+            padding-bottom: 40px;
+            margin-bottom: 80px;
+        }
+        .card-img-top{
+            height: 250px;
+            border: 1px solid rgb(181, 173, 173);
+        }
+        .card{
+            padding: 40px;
+
+        }
+        .card-group{
+            margin-bottom: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar sticky-top">
+            <div class="container">
+                <div class="navbar-start"></div>
+                <div class="navbar-end">
+                    <a class="nav-item m-2 mx-4" href="#about">About Me</a>
+                    <a class="nav-item m-2 mx-4" href="#projects">My Projects</a>
+                    <a class="btn nav-item m-2 mx-4" href="#contact" style="background-color: #6e07f3;color: white;">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="h1 text-center mt-5" style="font-size: 3rem;font-weight: 700;padding-top: 100px;">👋 Hii, I'm Sylvia. MERN Stack Developer.</h1>
+        <h4 class="h4 text-center mt-5">I design and code beautifully simple things, and I love what I do.</h4>
+        <div class="text-center mt-5 mb-5 pb-5"><img src="images/avatar.png" alt="profile pic" width="300px"></div>
+        
+    </div>
+    <div class="container-fluid about-bg text-center pt-5 mt-5" id="about">
+        <h1 class="text-decoration-underline pb-3 pt-5">About Me</h1>
+        <p class="text-center para">I'm Sylvia Jasme, a passionate full stack web application developer. My expertise is developing next-level websites and web applications including full frontend design. I can plan, design, build, and maintain a website myself. With every project, I strive to learn something new. Whether trying out new cutting-edge CSS features, optimizing part of my workflow, or using a new Node module, I am always learning-by-doing.</p>
+
+          <!-- <p class="text-justify pb-5 para"> The web can sometimes be indistinguishable from magic, but I have the knowledge and patience required to make just about anything.</p> -->
+        </div>
+
+          <div class="container pt-5 bg-light borderstyle">
+            <figure class="text-center">
+                <blockquote class="blockquote pb-2">
+                  <h1>My Skills</h1>
+                </blockquote>
+                <figcaption class="blockquote-footer pb-5">
+                  Things that I'm good at.
+                </figcaption>
+              </figure>
+
+              <div class="row p-4 px-5">
+              <div class="col">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"  style="width: 95%;">HTML</div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"  style="width: 85%;">CSS</div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"  style="width: 75%;">JS</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row p-4 px-5 mb-5">
+        <div class="col">
+      <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 70%;">Node JS</div>
+      </div>
+  </div>
+
+  <div class="col">
+      <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 65%;">Express JS</div>
+      </div>
+  </div>
+
+  <div class="col">
+      <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 55%;">React JS</div>
+      </div>
+  </div>
+</div>
+</div>
+<div class="container text-center" id="projects">
+<h1 class="text-decoration-underline pb-5">My Projects</h1>
+
+  <div class="card-group">
+    <div class="card">
+        <img class="card-img-top" src="/HTML/images/html-img.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title p-3">HTML Project</h4>
+            <p class="card-text">A project with html attributes and styles.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="images/blog-bootstrap.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title p-3">CSS Project</h4>
+            <p class="card-text">10 places to visit in kodaikanal</p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="images/bootstrap-registration-form.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title p-3">HTML Form</h4>
+            <p class="card-text">Bank Account Registration Form</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid bg-dark text-center p-5" id="contact">
+    <a href="https://github.com/j-sylvia/" class="px-5"> <i class="bi bi-github"></i> GitHub</a>
+    <a href="#" class="px-5"><i class="bi bi-linkedin"></i> LinkedIn</a>
+    <a href="#" class="px-5"> <i class="bi bi-facebook"></i> Facebook</a>
+  </div>
+  
+</body>
+</html>
